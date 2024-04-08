@@ -1,16 +1,16 @@
 public class Even implements Runnable {
-    private MyClass myClass;
+    private NumberPrinter numberPrinter;
     private int max;
 
-    public Even(MyClass myClass, int max) {
-        this.myClass = myClass;
+    public Even(NumberPrinter numberPrinter, int max) {
+        this.numberPrinter = numberPrinter;
         this.max = max;
     }
 
     @Override
     public void run() {
         for (int i = 2; i <= max; i += 2) {
-            myClass.printEvenNum(i);
+            numberPrinter.printEvenNum(i);
         }
     }
 }

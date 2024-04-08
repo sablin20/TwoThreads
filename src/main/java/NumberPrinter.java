@@ -1,6 +1,6 @@
 import java.util.concurrent.Semaphore;
 
-public class MyClass {
+public class NumberPrinter {
    private Semaphore semaphoreEven = new Semaphore(0);
    private Semaphore semaphoreOdd = new Semaphore(1);
 

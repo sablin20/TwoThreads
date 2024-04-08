@@ -1,16 +1,16 @@
 public class Odd implements Runnable {
-    private MyClass myClass;
+    private NumberPrinter numberPrinter;
     private int max;
 
-    public Odd(MyClass myClass, int max) {
-        this.myClass = myClass;
+    public Odd(NumberPrinter numberPrinter, int max) {
+        this.numberPrinter = numberPrinter;
         this.max = max;
     }
 
     @Override
     public void run() {
         for (int i = 1; i <= max; i += 2) {
-            myClass.printOddNum(i);
+            numberPrinter.printOddNum(i);
         }
     }
 }
